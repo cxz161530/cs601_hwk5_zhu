@@ -24,5 +24,11 @@ Follow the steps below to get the project up and running locally on your machine
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/local-grocery-store.git
-# cs601_hwk5_zhu
+   git clone https://github.com/cxz161530/cs601_hwk5_zhu
+
+2. Open terminal direct this folder and run code:
+
+   ```bash
+   npm run start
+
+3. The browser will pop up automatically
