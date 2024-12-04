@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import InventoryList from './Components/inventoryList';
 import './App.css';
-
-function App() {
+import Navbar from './Components/navbar';
+import Logo from './Logo.jpg';
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <img src={Logo} alt="Store Logo" className="logo" />
+        <h1>Local Grocery Store</h1>
+        <Navbar/>
+
       </header>
+      <h2>Inventory</h2>
+      <InventoryList />
+      <footer>
+        <p>&copy; 2024 Grocery Store. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }

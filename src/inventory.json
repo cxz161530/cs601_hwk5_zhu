@@ -1,0 +1,33 @@
+[
+    {
+      "sku": "12345",
+      "name": "Potato",
+      "qty": 510,
+      "price": 1.54
+    },
+    {
+      "sku": "12346",
+      "name": "Juice",
+      "qty": 130,
+      "price": 0.88
+    },
+    {
+      "sku": "12347",
+      "name": "Steak",
+      "qty": 130,
+      "price": 0.65
+    },
+    {
+      "sku": "12348",
+      "name": "Carrot",
+      "qty": 220,
+      "price": 1.22
+    },
+    {
+      "sku": "12349",
+      "name": "Bread",
+      "qty": 140,
+      "price": 1.88
+    }
+  ]
+  

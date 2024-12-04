@@ -1,0 +1,32 @@
+/* Style for the inventory list container */
+.inventory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Style for each inventory item (card) */
+  .inventory-item {
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+    font-size: 14px;
+  }
+  
+  .inventory-item h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .inventory-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
