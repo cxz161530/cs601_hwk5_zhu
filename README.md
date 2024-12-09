@@ -6,6 +6,9 @@ This is a simple React-based web application for managing the inventory of a loc
 
 - **Inventory List**: Displays a list of grocery items in square.
 - **Navbar**: A navigation bar to navigate between sections of the app.
+- **Detail View**: A Detail Dynamic view of each products are available.
+- **Dynamic URL**: Each detail product has its own profile with sepcific link and photo
+- **Back Button**: Back link added for the detail view and back to the homepage
 - **Responsive Design**: The app includes basic responsive styling to ensure a smooth experience on various devices.
 - **Footer**: A footer with copyright information.
 

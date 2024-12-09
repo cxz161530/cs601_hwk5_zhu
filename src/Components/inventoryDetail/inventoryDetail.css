@@ -1,0 +1,87 @@
+body, html {
+    height: 80%;
+  
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f4f4f4; 
+  }
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 400px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .card-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+ 
+  .card-content {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .card-content h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .sku, .qty, .price {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      max-width: 100%; 
+      margin: 10px;
+    }
+  
+    .card-content h1 {
+      font-size: 1.4rem;
+    }
+  
+    .sku, .qty, .price {
+      font-size: 1rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  }

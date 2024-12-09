@@ -1,19 +1,31 @@
 import React from 'react';
 import InventoryList from './Components/inventoryList';
+import InventoryDetail from './Components/inventoryDetail/inventoryDetail';
 import './App.css';
 import Navbar from './Components/navbar';
-import Logo from './Logo.jpg';
+import Header from './Components/Header'
+import { Routes, Route } from 'react-router-dom';
+import About from './Components/about';
+import Contact from './Components/Contact';
 const App = () => {
   return (
     <div className="App">
-      <header>
-        <img src={Logo} alt="Store Logo" className="logo" />
-        <h1>Local Grocery Store</h1>
-        <Navbar/>
+      <Header/>
+      <main>
+        <Routes>
+          <Route path="/" element={<InventoryList />} />
+          <Route path="/inventory" element={<InventoryList />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/inventory/:sku" element={<InventoryDetail />} />
+        </Routes>
+      
+   
+      </main>
 
-      </header>
-      <h2>Inventory</h2>
-      <InventoryList />
+
+
+     
       <footer>
         <p>&copy; 2024 Grocery Store. All Rights Reserved.</p>
       </footer>
